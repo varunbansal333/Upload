@@ -7,7 +7,7 @@
 <title>Upload Application </title>
 </head>
 <body>
-<form action = "/FileUploader/bansal/uploading/upload" method="post" enctype="multipart/form-data" >
+<form action = "bansal/uploading/upload" method="post" enctype="multipart/form-data" >
 Upload File: <input type="file" name="file" value="Choose File"/><br/>
 <input type="submit" value="upload"/>
 </form>

@@ -17,7 +17,7 @@ import com.fileUploader.services.UploadService;
 import com.sun.jersey.multipart.FormDataParam;
 
 @Path("/uploading")
-public class Upload{
+public class UploadApi{
 
 	@Autowired
 	UploadService uploadService = new UploadService();
