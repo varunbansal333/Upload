@@ -13,7 +13,6 @@
   <servlet>
     <servlet-name>Jersey REST Service</servlet-name> 
     <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
-    
     <init-param>
     <param-name>jersey.config.server.provider.packages</param-name>
     <param-value>com.fileUploader.api</param-value>
@@ -21,9 +20,13 @@
   
   <load-on-startup>1</load-on-startup>
 </servlet>
+<servlet>
+    <servlet-name>Using Servlet</servlet-name>
+    <servlet-class>com.fileUploader.servlets.LibrarySearchServletService</servlet-class>
+  </servlet>
   <servlet-mapping>
-    <servlet-name>Jersey REST Service</servlet-name>
-    <url-pattern>/bansal/*</url-pattern>
+    <servlet-name>Using Servlet</servlet-name>
+    <url-pattern>/bansal/library-servlet/books</url-pattern>
   </servlet-mapping>
   
 </web-app>

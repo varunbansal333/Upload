@@ -15,7 +15,7 @@ import javax.ws.rs.core.Response;
 public class LibrarySearchApi {
 	
 	@GET
-	@Path("/books")
+	@Path("/book")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)
 	@Produces(MediaType.TEXT_HTML)
 	public Response searchPage() throws IOException{
@@ -26,12 +26,10 @@ public class LibrarySearchApi {
 	
 	@POST
 	@Path("/books")
-	@Consumes(MediaType.MULTIPART_FORM_DATA)
-	@Produces(MediaType.TEXT_HTML)
+	@Produces(MediaType.TEXT_PLAIN)
 	public Response searchBooks(@PathParam("searchItem") String searchItem ) throws IOException{
-		String response=null;
 		
-		return Response.ok().entity(response).build();
+		return Response.ok().build();
 	}
 
 }
